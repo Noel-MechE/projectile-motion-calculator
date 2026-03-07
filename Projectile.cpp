@@ -12,7 +12,8 @@
 
 using namespace std;
 
-int main() {
+int main() 
+{
 
     //The program will accept two inputs from the user that being velocity anf angle so let us declare these variables from the user
     double Velocity;
@@ -45,10 +46,36 @@ int main() {
    double AngleRad = Angle * (M_PI / 180.0);
     
 //Once we have the required data/info we will procced to carry out the calculations
-double TimeOfFlight = (2*Velocity*sin(AngleRad))/ G;
-double MaxHeight = ((Velocity*Velocity)*(sin(AngleRad)*sin(AngleRad)))/(2*G);
-double HorizontalRange = ((Velocity*Velocity)*sin(2*AngleRad))/G;
+/*
+    Time of Flight: derived from vertical position equation y(t) = v0*sin(θ)*t - ½*g*t²
+    Setting y(t) = 0 and factoring out t gives two solutions.
+    t = 0 is the launch moment so we use the second solution:
+    t = (2 * v0 * sin(θ)) / g
+*/
+double TimeOfFlight = (2 * Velocity * sin(AngleRad)) / G;
+
+/*
+    Maximum Height: maximum occurs when vertical velocity equals zero.
+    Setting vy(t) = 0 gives t_peak = v0*sin(θ) / g
+    Substituting back into position equation and simplifying:
+    h = (v0² * sin²(θ)) / (2 * g)
+*/
+double MaxHeight = ((Velocity * Velocity) * (sin(AngleRad) * sin(AngleRad))) / (2 * G);
+
+/*
+    Horizontal Range: substitute Time of Flight into x(t) = v0*cos(θ)*t
+    Applying the double angle identity 2*sin(θ)*cos(θ) = sin(2θ):
+    R = (v0² * sin(2θ)) / g
+*/
+double HorizontalRange = ((Velocity * Velocity) * sin(2 * AngleRad)) / G;
+
+//Once we have derived and declared the equations that will be used, we can now display the results, here is where <manip> will come into play 
+//Int his case our setprecision will be 3 as I want to keep the results neat while being precise
+cout<<fixed<<setprecision(3);
+cout<< "\n--- Results ---\n";
+cout<< "Time of Flight :"<<TimeOfFlight<<" s\n";
+cout<< "Maximum Height" :<<MaxHeight<< "m\n";
+cout<< "Horizontal Range:"<<HorizontalRange<<" m\n";
+
     return 0;
 }
-
-//the followiong is a test to mnake sure i can work on my code across computers at any momnent i want 
