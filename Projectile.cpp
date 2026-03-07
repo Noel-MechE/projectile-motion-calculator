@@ -12,7 +12,7 @@
 
 using namespace std;
 
-int main() 
+int main()
 {
 
     //The program will accept two inputs from the user that being velocity anf angle so let us declare these variables from the user
@@ -73,8 +73,8 @@ double HorizontalRange = ((Velocity * Velocity) * sin(2 * AngleRad)) / G;
 //Int his case our setprecision will be 3 as I want to keep the results neat while being precise
 cout<<fixed<<setprecision(3);
 cout<< "\n--- Results ---\n";
-cout<< "Time of Flight :"<<TimeOfFlight<<" s\n";
-cout<< "Maximum Height" :<<MaxHeight<< "m\n";
+cout<< "Time of Flight: "<<TimeOfFlight<<" s\n";
+cout<< "Maximum Height: " <<MaxHeight<< " m\n";
 cout<< "Horizontal Range:"<<HorizontalRange<<" m\n";
 
     return 0;
