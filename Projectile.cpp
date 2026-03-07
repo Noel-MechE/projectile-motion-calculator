@@ -50,3 +50,5 @@ double MaxHeight = ((Velocity*Velocity)*(sin(AngleRad)*sin(AngleRad)))/(2*G);
 double HorizontalRange = ((Velocity*Velocity)*sin(2*AngleRad))/G;
     return 0;
 }
+
+//the followiong is a test to mnake sure i can work on my code across computers at any momnent i want 
