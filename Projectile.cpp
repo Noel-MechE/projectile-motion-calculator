@@ -27,6 +27,7 @@ int main()
 
     //Since this is a physics based program, we will always work with certain constants and in this case we will work with gravity and pi, therefore let us declare those constants
     const double G = 9.81;
+    const double PI = 3.14159265358979323846;
     /*
     Once we have declared variables and the things we will acpet and work with we can now begin to accept such inputs
     */
@@ -43,7 +44,7 @@ int main()
     their proper units
     */
    //Converting angles from degree to radians
-   double AngleRad = Angle * (M_PI / 180.0);
+   double AngleRad = Angle * (PI / 180.0);
     
 //Once we have the required data/info we will procced to carry out the calculations
 /*
