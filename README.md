@@ -133,7 +133,8 @@ two machines, which taught me how real developers work in professional
 environments.
 
 The most valuable thing I took away from this project is that 
-engineering and programming are not separate skills — they complement 
+engineering and programming are not separate skills,
+they complement 
 each other. My mechanical engineering foundation made me a better 
 programmer because I understood the why behind every formula, not 
 just the syntax.
