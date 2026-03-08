@@ -1,6 +1,13 @@
-# projectile-motion-calculator
-A C++ program that calculates projectile motion including time of flight, maximum height, and horizontal range
+##Projectile Motion Calculator
 
+Throughout my academic career I have struggled with projectile motion, so I dedicated this C++ program to calculating the motion of a projectile launched at a given angle and velocity.
+
+Outputs calculated:
+- Time of Flight
+- Maximum Height
+- Horizontal Range
+
+Built as part of my portfolio for the Snap Engineering Academy 2026 application.
 
 ## My Git Workflow
 
